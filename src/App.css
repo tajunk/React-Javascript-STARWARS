@@ -1,0 +1,32 @@
+/* Custom CSS */
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+article {
+  width: 35rem;
+}
+
+.charContainer {
+  width: 90vw;
+  margin: 3rem auto;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: start;
+}
+
+@media screen and (max-width: 1330px) {
+  .charContainer {
+    grid-template-columns: repeat(1, 1fr);
+    align-items: start;
+    max-width: 1170px;
+    width: 60vw;
+    margin: 1rem auto;
+  }
+}
